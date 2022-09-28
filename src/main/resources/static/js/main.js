@@ -157,7 +157,7 @@ function getFormData(form) {
         login: $(form + ' input[name="login"]').val(),
         password: $(form + ' input[name="password"]').val(),
         name: $(form + ' input[name="name"]').val(),
-        surname: $(form + ' input[name="surname"]').val(),
+        lastName: $(form + ' input[name="lastName"]').val(),
         age: $(form + ' input[name="age"]').val(),
         email: $(form + ' input[name="email"]').val(),
         roles: selectedRoles
@@ -170,7 +170,7 @@ function loadDataToFormData(id, action) {
         $(action + '_id').val($(this).find("td:eq(0)").html())
         $(action + '_login').val($(this).find("td:eq(1)").html());
         $(action + '_name').val($(this).find("td:eq(2)").html());
-        $(action + '_surname').val($(this).find("td:eq(3)").html());
+        $(action + '_lastName').val($(this).find("td:eq(3)").html());
         $(action + '_age').val($(this).find("td:eq(4)").html());
         $(action + '_email').val($(this).find("td:eq(5)").html());
 
